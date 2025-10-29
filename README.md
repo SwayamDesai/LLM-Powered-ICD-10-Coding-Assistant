@@ -12,17 +12,17 @@ The system combines retrieval-based search and large language models (LLMs) to i
 
 **How It Works:**
 
-Data Collection: ICD-10 code descriptions and related medical text were gathered from public sources.
+1. Data Collection: ICD-10 code descriptions and related medical text were gathered from public sources.
 
-Knowledge Base: All ICD-10 code data is embedded using transformer models and stored in Milvus, a vector database that allows fast and efficient similarity search.
+2. Knowledge Base: All ICD-10 code data is embedded using transformer models and stored in Milvus, a vector database that allows fast and efficient similarity search.
 
-Model: A fine-tuned LLaMA-based Large Language Model (LLM) uses the retrieved information to predict the most relevant ICD-10 codes.
+3. Model: A fine-tuned Qwen based Large Language Model (LLM) uses the retrieved information to predict the most relevant ICD-10 codes.
 
-RAG Pipeline: The system applies a Retrieval-Augmented Generation (RAG) approach:
+4. RAG Pipeline: The system applies a Retrieval-Augmented Generation (RAG) approach:
 
-Retrieve the most relevant ICD-10 entries from the vector database
+5. Retrieve the most relevant ICD-10 entries from the vector database
 
-Generate and refine predictions based on the retrieved context
+6. Generate and refine predictions based on the retrieved context
 
 
 **Key Features:**
